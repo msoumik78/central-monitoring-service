@@ -8,4 +8,9 @@ server:
 job:
   nats:
     uri: nats://localhost:4222
-    topic: temp
+    temp-topic-name: TEMP
+    humidity-topic-name: HUMIDITY
+
+threshold:
+  temp: 45
+  humidity: 15

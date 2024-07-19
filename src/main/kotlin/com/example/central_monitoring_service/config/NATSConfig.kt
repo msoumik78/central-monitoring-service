@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class NATSConfig {
   @Value("\${job.nats.uri}")
-  private val natsUri: String? = null
+  val natsUri: String? = null
 
   @Bean
   fun getNATSConnection(): Connection {
