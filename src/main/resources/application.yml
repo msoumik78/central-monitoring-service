@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: central-monitoring-service
+
+server:
+  port : 8084
+
+job:
+  nats:
+    uri: nats://localhost:4222
+    topic: temp
