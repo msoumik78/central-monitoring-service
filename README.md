@@ -1,10 +1,10 @@
 # Functionality (Central monitoring service)
 This repo contains a spring-boot which listens to NATS messages at 2 dedicated topics/subjects and process them to judge
-if they are beyond a certain threhold.
+if they are beyond a certain threshold.
 
 
 # Technical details and Pre-requisites
-- Written using Spring Boot framework and comprising multiple modules
+- Written using Spring Boot framework
 - Needs to have the Docker desktop running with Nats server running as a docker container
 - Also the other project warehouse-service should be running
 
@@ -15,7 +15,7 @@ if they are beyond a certain threhold.
   ```kotlin
   docker run -p 4222:4222 -ti nats:latest
   ```
-- Then clone the master branch. Ensure that you have at least JDK17 and Maven3.X available. Build the project using the command :
+- Then clone the main branch. Ensure that you have at least JDK17 and Maven3.X available. Build the project using the command :
   ```kotlin
   mvn clean package -DskipTests
   ```
